@@ -1,0 +1,66 @@
+.Navbar{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #071B3A;
+    padding: 0px 30px;
+    border-radius: 13px; 
+    color: white;
+    box-shadow: 0 15px 5px 0 rgb(0, 0,0,0.25);
+    z-index: 99;
+}
+.Navbar .Logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.Navbar .Logo img{
+    width:45px;
+    height: 45px;
+}
+.Navbar .Logo h2 {
+    font-size: 32 px;
+    cursor: pointer;
+}
+.Navbar .Menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.Navbar .Menu li{
+    font-size: 18px;
+    margin: 0 5px;
+    padding: 3px 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.Navbar .Menu-buttton{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+}
+.Navbar .Menu-buttton button{
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-weight: 700;
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+}
+.Navbar .Menu-buttton button:hover{
+    background-color: #62D5F7;
+    color: #071B3A;
+}
+
+

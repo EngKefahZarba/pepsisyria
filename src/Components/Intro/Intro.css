@@ -1,0 +1,35 @@
+.intro-screen {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.intro-logo {
+  width:250px;
+  animation: logoIntro 1.8s ease-in-out forwards;
+}
+
+@keyframes logoIntro {
+  0% {
+    transform: rotate(-35deg) scale(0.5);
+    opacity: 0;
+  }
+
+  55% {
+    transform: rotate(15deg) scale(1.1);
+    opacity: 1;
+  }
+
+  80% {
+    transform: rotate(-5deg) scale(0.95);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}

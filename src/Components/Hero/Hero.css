@@ -1,34 +1,134 @@
-.Hero{
+.Hero {
     background-image: url(../../assets/Images/HeroImg.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
+    min-height: 100svh;
+    padding: 180px 5% 60px;
 }
 
-.Hero .HeroTitle{
+.Hero .HeroTitle {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-top: 200px;
-}
-.Hero .HeroTitle img{
-    width: 250px;
-    height: 250px;
-}
-.Hero .HeroTitle .Title{
-color: white; 
-}
-.Hero .HeroTitle .Title h1{
-font-size: 55px;
-}
-.Hero .HeroTitle .Title h2{
-font-size: 35px;
-}
-.Hero .HeroTitle .Title p{
-font-size:  20px;
 
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.Hero .HeroTitle img {
+    width: clamp(160px, 18vw, 250px);
+    height: auto;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.Hero .HeroTitle .Title {
+    flex: 1;
+    min-width: 0;
+    color: white;
+    overflow-wrap: break-word;
+}
+
+.Hero .HeroTitle .Title h1 {
+    margin: 0 0 20px;
+    font-size: clamp(32px, 4vw, 55px);
+    line-height: 1.15;
+}
+
+.Hero .HeroTitle .Title h2 {
+    margin: 0 0 16px;
+    font-size: clamp(24px, 2.6vw, 35px);
+    line-height: 1.3;
+}
+
+.Hero .HeroTitle .Title p {
+    max-width: 650px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+/* التابلت */
+@media (max-width: 1024px) {
+    .Hero {
+        padding-top: 150px;
+    }
+
+    .Hero .HeroTitle {
+        gap: 24px;
+    }
+
+    .Hero .HeroTitle .Title p {
+        font-size: 18px;
+    }
+}
+
+/* التابلت الصغير والموبايل */
+@media (max-width: 768px) {
+    .Hero {
+        padding: 130px 24px 50px;
+    }
+
+    .Hero .HeroTitle {
+        flex-direction: column;
+        gap: 28px;
+        text-align: center;
+    }
+
+    .Hero .HeroTitle img {
+        width: 180px;
+    }
+
+    .Hero .HeroTitle .Title {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .Hero .HeroTitle .Title h1 {
+        font-size: clamp(28px, 5.5vw, 40px);
+    }
+
+    .Hero .HeroTitle .Title h2 {
+        font-size: 26px;
+    }
+
+    .Hero .HeroTitle .Title p {
+        margin-inline: auto;
+        font-size: 17px;
+    }
+}
+
+/* الموبايل الصغير */
+@media (max-width: 480px) {
+    .Hero {
+        padding: 110px 18px 40px;
+    }
+
+    .Hero .HeroTitle {
+        gap: 24px;
+    }
+
+    .Hero .HeroTitle img {
+        width: 200px;
+    }
+
+    .Hero .HeroTitle .Title h1 {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .Hero .HeroTitle .Title h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .Hero .HeroTitle .Title p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
 }

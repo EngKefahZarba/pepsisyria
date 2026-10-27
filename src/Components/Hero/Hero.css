@@ -107,6 +107,8 @@
 @media (max-width: 480px) {
     .Hero {
         padding: 110px 18px 40px;
+        background-image: url(../../assets/Images/HeroMobile.png);
+
     }
 
     .Hero .HeroTitle {

@@ -53,9 +53,7 @@ function NavBar() {
           <li><a href="#contact" onClick={closeMenu}>Contact Us</a></li>
         </ul>
 
-        <button className="Language-button" type="button">
-          EN / AR
-        </button>
+        <button className="Language-button" type="button">EN / AR</button>
       </div>
     </nav>
   )

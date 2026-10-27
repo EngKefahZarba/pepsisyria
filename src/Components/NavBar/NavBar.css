@@ -204,7 +204,7 @@
 @media (max-width: 600px) {
   .Navbar {
     width: calc(100% - 24px);
-    height: 64px;
+    height: 80px;
     top: 12px;
     padding: 0 14px;
     gap: 8px;
